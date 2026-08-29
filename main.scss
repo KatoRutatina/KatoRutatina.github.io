@@ -1,5 +1,36 @@
----
-# Front matter comment to ensure Jekyll properly reads file.
----
-
 @import 'modern-resume-theme';
+
+// --- Vibrant light-mode accents ---
+// The theme already uses <mark> for highlights (see your about_content)
+// and colors links/section-headers with its accent color — override both
+// here so the whole site picks up a punchier, on-brand palette instead of
+// the default blue/grey.
+
+body {
+  background: linear-gradient(180deg, #fdfcff 0%, #eef4ff 100%);
+}
+
+a {
+  color: #2563eb; // vibrant blue — change to taste
+}
+
+mark {
+  background-color: #ffe08a; // warm yellow highlight
+  color: #1a1a1a;
+}
+
+// Section titles (Projects / Experience / Education / etc.)
+h2, .section-title {
+  color: #7c3aed; // accent purple
+}
+
+// If you want a colorful border/accent on your profile photo:
+.profile img, img.profile-image {
+  border: 4px solid #2563eb;
+  border-radius: 50%;
+}
+
+// NOTE: the exact class names for headers/section titles can vary slightly
+// by theme version. If a rule above doesn't visibly change anything, open
+// your live site, right-click the element in question → Inspect, note the
+// class name shown in dev tools, and swap it in above.

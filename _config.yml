@@ -1,5 +1,5 @@
 # Site
-repository: Rutatina95/rutatina95.github.io
+repository: catolotatina/catolotatina.github.io
 favicon: images/favicon.ico
 
 # Content configuration version
@@ -7,15 +7,16 @@ version: 2
 
 # Personal info
 name: Kato Rutatina Pascraties
-title: Petroleum Engineering Graduate Student — CSEG Member
+title: Petroleum Engineer | Reservoir Simulation & Frac Optimization
 email: 2024290049@student.cup.edu.cn
-website: github.com/Rutatina95
+website: github.com/catolotatina
 
-# Dark Mode (true/false/never)
-darkmode: false
+# Dark Mode (true/false/never) — "never" locks the site to light mode
+# regardless of the visitor's device settings
+darkmode: never
 
 # Social links
-github_username:  Rutatina95
+github_username:  catolotatina
 linkedin_username: kato-rutatina-pascraties
 
 # Additional icon links
@@ -27,94 +28,105 @@ linkedin_username: kato-rutatina-pascraties
 # About Section
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, I'm Kato — a Petroleum Engineering graduate (B.Sc.) and current M.Sc. candidate at China University of Petroleum (Beijing), working on reservoir simulation, hydraulic fracturing optimization, and geomechanics. I'm skilled in reservoir simulation software (PETREL, GOHFER 3D), machine learning with Python, and database management (MySQL), and I bring professional experience in logistics coordination and supply chain optimization.
+  M.Sc. candidate @ China University of Petroleum (Beijing) 🛢️
 
-  Trilingual in English, Mandarin, and Swahili, with experience in international collaboration and cross-cultural communication.
+  - Reservoir simulation & hydraulic fracturing optimization
+  - PETREL • GOHFER 3D • Python/ML • MySQL
+  - Ex-logistics coordinator turned data-driven engineer
+  - Trilingual: English • Mandarin • Swahili
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
+  - title: Projects
+    layout: list
     content:
       - layout: top-middle
         title: Oilfield Software Training Blog
         # link: # add the real blog URL here
         description: | # this will include new lines to allow paragraphs
-          Practical tutorials and guides for industry-standard reservoir simulation software, bridging academic theory and real-world field application. Topics include PETREL workflows, CMG simulation setups, and GOHFER 3D fracture modeling. (2024–Present)
+          - Tutorials on PETREL, CMG, and GOHFER 3D
+          - Bridges classroom theory and field practice
+          - Running since 2024
 
       - layout: top-middle
-        title: High-Resolution 3D Geomechanical Modeling for Hydraulic Fracturing Optimization
+        title: 3D Geomechanical Modeling for Frac Optimization
         link: doi.org/10.1088/1742-6596/3290/1/012210
-        link_text: View publication
+        link_text: Read the paper
         description: | # this will include new lines to allow paragraphs
-          Conference paper (lead author) — A Case Study in the Bai Jiantan Formation. Published in *Journal of Physics: Conference Series*, 3290, 012210, IOP Publishing, 2026. Presented at the International Petroleum & Petrochemical Technology Conference (IPPTC) 2026, Shanghai, China. Developed the 3D geomechanical modeling workflow and hydraulic fracturing simulation case study.
+          - Lead author, *Journal of Physics: Conference Series* (2026)
+          - Case study: Bai Jiantan Formation
+          - Presented at IPPTC 2026, Shanghai
 
       - layout: top-middle
-        title: Research on the Calculation Method of Dynamic Effective Stress Coefficient Based on P-Wave Velocity
+        title: Dynamic Effective Stress Coefficient from P-Wave Velocity
         link: doi.org/10.3390/pr14010127
-        link_text: View publication
+        link_text: Read the paper
         description: | # this will include new lines to allow paragraphs
-          Journal article (co-author) — Published in *Processes*, 14(1), 127, MDPI, 2024. Contributed data analysis and methodology development.
+          - Co-author, *Processes* (MDPI, 2024)
+          - Data analysis & methodology development
 
-  - title: Experience # Title for the section
-    layout: list # Type of content section (list/text)
+  - title: Experience
+    layout: list
     content:
       - layout: left
         title: Silent Ocean Limited Forwarding and Clearing
-        sub_title: Logistics and Export Coordinator
-        caption: February 2021 - March 2023
+        sub_title: Logistics & Export Coordinator
+        caption: Feb 2021 - Mar 2023
         description: | # this will include new lines to allow paragraphs
-          Managed end-to-end export processes including product purchasing, packaging, and delivery. Coordinated with international agencies to ensure timely and compliant shipments, optimizing logistics operations for a 15% reduction in delivery times. Maintained detailed documentation for customs clearance and regulatory compliance.
+          - Ran end-to-end export ops: purchasing → packaging → delivery
+          - Cut delivery times 15% through logistics optimization
+          - Kept customs & compliance docs airtight
 
       - layout: left
         title: Market Research Analyst
-        caption: February 2021 - October 2022
+        caption: Feb 2021 - Oct 2022
         description: | # this will include new lines to allow paragraphs
-          Conducted comprehensive market analysis to identify optimal sourcing opportunities. Negotiated with 50+ suppliers across multiple product categories, securing contracts with average cost savings of 12%. Developed market trend reports informing business strategy decisions.
+          - Negotiated with 50+ suppliers, avg. 12% cost savings
+          - Built market trend reports that shaped strategy
 
-  - title: Education # Title for the section
-    layout: list # Type of content section (list/text)
+  - title: Education
+    layout: list
     content:
       - layout: left
         title: China University of Petroleum (Beijing)
-        caption: September 2024 - July 2027 (Expected)
-        sub_title: M.Sc. in Petroleum Engineering, Unconventional Petroleum Research Institute
+        caption: 2024 - 2027 (Expected)
+        sub_title: M.Sc. Petroleum Engineering
         description: | # this will include new lines to allow paragraphs
-          Focus: Hydraulic fracturing optimization, reservoir simulation, machine learning applications.
+          Focus: hydraulic fracturing optimization, reservoir simulation, ML applications
 
       - layout: left
         title: Changzhou University
-        caption: October 2020 - July 2024
-        sub_title: B.Sc. in Petroleum Engineering
+        caption: 2020 - 2024
+        sub_title: B.Sc. Petroleum Engineering
         description: | # this will include new lines to allow paragraphs
-          Thesis: "The Sensitivity Analysis of Leakage Behavior on Multistage Fracturing with Horizontal Well" — utilized the HALLIBURTON GOHFER 3D fracturing simulator, presenting findings on optimal fracturing parameters for minimal leakage.
-
-          Research Project: "Hydrogen Gas Storage in Geological Structures and Transportation in Natural Gas Pipelines" — proposed a method for hydrogen gas storage in depleted reservoirs and analyzed its technical feasibility and economic viability.
+          - Thesis: leakage sensitivity in multistage fracturing (GOHFER 3D)
+          - Research: hydrogen storage in depleted reservoirs
 
       - layout: left
         title: Tsinghua University
-        caption: January 2021 - March 2021
-        sub_title: Visiting Exchange Student — Innovation & Entrepreneurship Program
-        description: | # this will include new lines to allow paragraphs
-          Blockchain Voting System project.
+        caption: Jan - Mar 2021
+        sub_title: Exchange — Blockchain Voting System
 
       - layout: left
-        title: Chongqing University of Posts and Telecommunications
-        caption: October 2023 - November 2023
-        sub_title: Advanced Workshop on Cross-border E-commerce and Postal Express Industry Cooperation
+        title: Chongqing Univ. of Posts & Telecommunications
+        caption: Oct - Nov 2023
+        sub_title: Cross-border E-commerce & Postal Express Workshop
 
-  - title: A Little More About Me
+  - title: Travel
     layout: text
     content: | # this will include new lines to allow paragraphs
-      **Technical Skills:** PETREL, HALLIBURTON GOHFER 3D, Python (machine learning), MATLAB, OriginLab, Power BI, MySQL
+      A few snapshots from life outside the reservoir models 🌏
 
-      **Languages:** English (professional), Mandarin (working proficiency), Swahili (native)
+      ![Singapore](/images/singapore.jpg "Singapore")
+      ![Tianjin](/images/tianjin.jpg "Tianjin")
 
-      **Awards & Certifications:**
-      - Outstanding Student in Academic Performance in Jiangsu Province — Jiangsu Provincial Government (2023)
-      - Outstanding Student Performance Award, Petroleum Engineering Department — Changzhou University (2022)
-      - Member, Canadian Society of Exploration Geophysicists (CSEG)
-      - Certified Guizhou Silk Road Youth Exchange Programme, 2022 — Qiannan Normal University for Nationalities and Cultural Heritage
-      - Fundamentals of Digital Marketing, 2022 — Google Digital Garage Workshop
+  - title: Skills & Awards
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      **Tools:** PETREL • GOHFER 3D • Python • MATLAB • Power BI • MySQL
+
+      **Awards:** Jiangsu Provincial Academic Award (2023) • Changzhou University Dept. Prize (2022)
+
+      **Certs:** CSEG Member • Guizhou Silk Road Youth Exchange (2022) • Google Digital Marketing (2022)
 
 # Footer
 footer_show_references: true
