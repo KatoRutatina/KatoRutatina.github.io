@@ -54,7 +54,7 @@ plugins:
   - jekyll-include-cache
 author:
   name   : "Kato Rutatina Pascraties"
-  avatar : "/assets/images/Professional id.jpg"
+  avatar : "/assets/images/profile.jpg"
   bio    : "Petroleum Engineering M.Sc. candidate — reservoir simulation, hydraulic fracturing & geomechanics"
   links:
     - label: "Oilfield Software Training Blog"
