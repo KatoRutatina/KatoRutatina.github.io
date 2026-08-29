@@ -30,6 +30,24 @@ h2, .section-title {
   border-radius: 50%;
 }
 
+// --- Keep content off the page edges ---
+// Most Jekyll themes wrap the page in a `.container` div — constrain that
+// first. `body` is set as a fallback in case this theme's sections sit
+// directly on body instead, so text never runs edge-to-edge either way.
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
 // NOTE: the exact class names for headers/section titles can vary slightly
 // by theme version. If a rule above doesn't visibly change anything, open
 // your live site, right-click the element in question → Inspect, note the
