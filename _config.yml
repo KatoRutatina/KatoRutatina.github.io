@@ -7,12 +7,11 @@ version: 2
 
 # Personal info
 name: Kato Rutatina Pascraties
-title: Petroleum Engineer | Reservoir Simulation & Frac Optimization
+title: Petroleum Engineer | Reservoir Sim & Frac Optimization
 email: 2024290049@student.cup.edu.cn
 website: github.com/catolotatina
 
 # Dark Mode (true/false/never) — "never" locks the site to light mode
-# regardless of the visitor's device settings
 darkmode: never
 
 # Social links
@@ -28,12 +27,11 @@ linkedin_username: kato-rutatina-pascraties
 # About Section
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  M.Sc. candidate @ China University of Petroleum (Beijing) 🛢️
+  M.Sc. candidate, China University of Petroleum (Beijing) 🛢️
 
-  - Reservoir simulation & hydraulic fracturing optimization
-  - PETREL • GOHFER 3D • Python/ML • MySQL
-  - Ex-logistics coordinator turned data-driven engineer
-  - Trilingual: English • Mandarin • Swahili
+  - Reservoir simulation & frac optimization
+  - PETREL • GOHFER 3D • Python • MySQL
+  - English • Mandarin • Swahili
 
 content:
   - title: Projects
@@ -41,47 +39,41 @@ content:
     content:
       - layout: top-middle
         title: Oilfield Software Training Blog
-        # link: # add the real blog URL here
         description: | # this will include new lines to allow paragraphs
-          - Tutorials on PETREL, CMG, and GOHFER 3D
-          - Bridges classroom theory and field practice
-          - Running since 2024
+          - PETREL, CMG & GOHFER 3D tutorials
+          - Since 2024
 
       - layout: top-middle
-        title: 3D Geomechanical Modeling for Frac Optimization
+        title: 3D Geomechanics for Frac Optimization
         link: doi.org/10.1088/1742-6596/3290/1/012210
-        link_text: Read the paper
+        link_text: Read paper
         description: | # this will include new lines to allow paragraphs
-          - Lead author, *Journal of Physics: Conference Series* (2026)
-          - Case study: Bai Jiantan Formation
-          - Presented at IPPTC 2026, Shanghai
+          - Lead author, IOP 2026
+          - Bai Jiantan Formation case study
 
       - layout: top-middle
-        title: Dynamic Effective Stress Coefficient from P-Wave Velocity
+        title: Effective Stress Coefficient from P-Wave Velocity
         link: doi.org/10.3390/pr14010127
-        link_text: Read the paper
+        link_text: Read paper
         description: | # this will include new lines to allow paragraphs
-          - Co-author, *Processes* (MDPI, 2024)
-          - Data analysis & methodology development
+          - Co-author, Processes (MDPI) 2024
 
   - title: Experience
     layout: list
     content:
       - layout: left
-        title: Silent Ocean Limited Forwarding and Clearing
+        title: Silent Ocean Limited
         sub_title: Logistics & Export Coordinator
         caption: Feb 2021 - Mar 2023
         description: | # this will include new lines to allow paragraphs
-          - Ran end-to-end export ops: purchasing → packaging → delivery
-          - Cut delivery times 15% through logistics optimization
-          - Kept customs & compliance docs airtight
+          - Cut delivery times 15%
+          - Managed export ops & customs docs
 
       - layout: left
         title: Market Research Analyst
         caption: Feb 2021 - Oct 2022
         description: | # this will include new lines to allow paragraphs
-          - Negotiated with 50+ suppliers, avg. 12% cost savings
-          - Built market trend reports that shaped strategy
+          - 50+ suppliers, avg. 12% cost savings
 
   - title: Education
     layout: list
@@ -90,16 +82,13 @@ content:
         title: China University of Petroleum (Beijing)
         caption: 2024 - 2027 (Expected)
         sub_title: M.Sc. Petroleum Engineering
-        description: | # this will include new lines to allow paragraphs
-          Focus: hydraulic fracturing optimization, reservoir simulation, ML applications
 
       - layout: left
         title: Changzhou University
         caption: 2020 - 2024
         sub_title: B.Sc. Petroleum Engineering
         description: | # this will include new lines to allow paragraphs
-          - Thesis: leakage sensitivity in multistage fracturing (GOHFER 3D)
-          - Research: hydrogen storage in depleted reservoirs
+          - Thesis: multistage frac leakage (GOHFER 3D)
 
       - layout: left
         title: Tsinghua University
@@ -107,15 +96,13 @@ content:
         sub_title: Exchange — Blockchain Voting System
 
       - layout: left
-        title: Chongqing Univ. of Posts & Telecommunications
+        title: Chongqing Univ. of Posts & Telecom
         caption: Oct - Nov 2023
-        sub_title: Cross-border E-commerce & Postal Express Workshop
+        sub_title: E-commerce & Postal Express Workshop
 
   - title: Travel
     layout: text
     content: | # this will include new lines to allow paragraphs
-      A few snapshots from life outside the reservoir models 🌏
-
       ![Singapore](/images/singapore.jpg "Singapore")
       ![Tianjin](/images/tianjin.jpg "Tianjin")
 
@@ -124,9 +111,7 @@ content:
     content: | # this will include new lines to allow paragraphs
       **Tools:** PETREL • GOHFER 3D • Python • MATLAB • Power BI • MySQL
 
-      **Awards:** Jiangsu Provincial Academic Award (2023) • Changzhou University Dept. Prize (2022)
-
-      **Certs:** CSEG Member • Guizhou Silk Road Youth Exchange (2022) • Google Digital Marketing (2022)
+      **Recognition:** Jiangsu Provincial Academic Award (2023) • CSEG Member
 
 # Footer
 footer_show_references: true
