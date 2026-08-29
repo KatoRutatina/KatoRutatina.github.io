@@ -24,16 +24,62 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Kato Rutatina Pascraties"
+  pronouns         : # example: "she/her"  
   bio              : "Petroleum Engineering M.Sc. candidate — reservoir simulation, hydraulic fracturing & geomechanics"
   location         : "Beijing, China"
   employer         : "China University of Petroleum (Beijing)"
+  uri              : # URL
   email            : "2024290049@student.cup.edu.cn"
 
+  # Academic websites
+  academia         : # URL
+  arxiv            : # URL - Update with the correct link to your profile
+  googlescholar    : # URL - add your Google Scholar profile link if you have one
+  inspire-hep      : # URL
+  impactstory      : # URL
+  orcid            : # Add your full ORCID URL, e.g. "https://orcid.org/0000-0000-0000-0000"
+  semantic         : # URL
+  ssrn             : # URL
+  pubmed           : # URL
+  researchgate     : # URL
+  scopus           : # URL
+  zotero           : # URL
+
+
   # Repositories and software development
+  bitbucket        : # Username - Update with your username on the site
+  codepen          : # Username
+  dribbble         : # Username
   github           : "Rutatina95"
+  kaggle           : # Username  
+  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
+  artstation       : # Username
+  bluesky          : # Replace this with your Bluesky username
+  facebook         : # Username
+  flickr           : # Username
+  foursquare       : # Username
+  goodreads        : # Username
+  google_plus      : # Username
+  keybase          : # Username
+  instagram        : # Username
+  lastfm           : # Username
   linkedin         : "kato-rutatina-pascraties"
+  mastodon         : # URL
+  medium           : # URL
+  pinterest        : # Username
+  soundcloud       : # Username
+  steam            : # Username
+  telegram         : # URL
+  tumblr           : # Username
+  twitter          : # Username for X / Twitter
+  vine             : # Username
+  weibo            : # Username
+  wikipedia        : # Username
+  xing             : # Username
+  youtube          : # Username
+  zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
@@ -45,12 +91,59 @@ publication_category:
     title: 'Conference Papers'
 
 # Site Settings
+teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false      #change to true to add link to talkmap on talks page
+comments:
+  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  disqus:
+    shortname            :
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+staticman:
+  allowedFields          : ['name', 'email', 'url', 'message']
+  branch                 : "gh-pages" # "master", "gh-pages"
+  commitMessage          : "New comment."
+  filename               : comment-{@timestamp}
+  format                 : "yml"
+  moderation             : true
+  path                   : "_data/comments/{options.slug}"
+  requiredFields         : ['name', 'email', 'message']
+  transforms:
+    email                : "md5"
+  generatedFields:
+    date:
+      type               : "date"
+      options:
+        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+atom_feed:
+  hide                   : false     # change to true to hide the RSS feed in the footer
+  path                   : # blank (default) uses feed.xml
 
+
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+alexa_site_verification  :
+yandex_site_verification :
+
+
+# Social Sharing
+twitter:
+  username               : &twitter
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 :  # Social media default site image
+og_description           : "Petroleum Engineering M.Sc. candidate — reservoir simulation, hydraulic fracturing & geomechanics research"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -59,6 +152,13 @@ social:
   links: # An array of links to social media profiles
     - "https://github.com/Rutatina95"
     - "https://www.linkedin.com/in/kato-rutatina-pascraties"
+
+
+# Analytics
+analytics:
+  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  google:
+    tracking_id          :
 
 
 # Reading Files
@@ -201,6 +301,8 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
 timezone: Asia/Shanghai # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
@@ -239,6 +341,17 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
 
 
 # HTML Compression
