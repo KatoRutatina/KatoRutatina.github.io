@@ -1,120 +1,123 @@
 # Site
-repository: sproogen/resume-theme
+repository: Rutatina95/rutatina95.github.io
 favicon: images/favicon.ico
 
 # Content configuration version
 version: 2
 
 # Personal info
-name: Brett Harris
-title: Senior Network System Administrator
-email: brett.h@email.co.uk
-website: www.github.com/sproogen/resume-theme
+name: Kato Rutatina Pascraties
+title: Petroleum Engineering Graduate Student — CSEG Member
+email: 2024290049@student.cup.edu.cn
+website: github.com/Rutatina95
 
 # Dark Mode (true/false/never)
 darkmode: false
 
 # Social links
-twitter_username: facespics
-github_username:  sproogen
-# stackoverflow_username: "00000001"
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
-instagram_username: jameswgrant
-linkedin_username: jameswgrant
-# xing_username: jekyll
-# pinterest_username: jekyll
-youtube_username: globalmtb
-# googleplus_username: +jekyll
-# orcid_username: 0000-0000-0000-0000
+github_username:  Rutatina95
+linkedin_username: kato-rutatina-pascraties
 
 # Additional icon links
-additional_links:
-- title: itsgoingto.be
-  icon: fas fa-globe
-  url: https://www.itsgoingto.be
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
-#   url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
+# additional_links:
+# - title: Oilfield Software Training Blog
+#   icon: fas fa-globe
+#   url: # add the real blog URL here, then uncomment this block
 
 # About Section
-# about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
+  Hi, I'm Kato — a Petroleum Engineering graduate (B.Sc.) and current M.Sc. candidate at China University of Petroleum (Beijing), working on reservoir simulation, hydraulic fracturing optimization, and geomechanics. I'm skilled in reservoir simulation software (PETREL, GOHFER 3D), machine learning with Python, and database management (MySQL), and I bring professional experience in logistics coordination and supply chain optimization.
 
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  Trilingual in English, Mandarin, and Swahili, with experience in international collaboration and cross-cultural communication.
 
 content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
-        # link_text: Project Website
-        additional_links:
-          - title:  sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        title: Oilfield Software Training Blog
+        # link: # add the real blog URL here
         description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+          Practical tutorials and guides for industry-standard reservoir simulation software, bridging academic theory and real-world field application. Topics include PETREL workflows, CMG simulation setups, and GOHFER 3D fracture modeling. (2024–Present)
+
+      - layout: top-middle
+        title: High-Resolution 3D Geomechanical Modeling for Hydraulic Fracturing Optimization
+        link: doi.org/10.1088/1742-6596/3290/1/012210
+        link_text: View publication
+        description: | # this will include new lines to allow paragraphs
+          Conference paper (lead author) — A Case Study in the Bai Jiantan Formation. Published in *Journal of Physics: Conference Series*, 3290, 012210, IOP Publishing, 2026. Presented at the International Petroleum & Petrochemical Technology Conference (IPPTC) 2026, Shanghai, China. Developed the 3D geomechanical modeling workflow and hydraulic fracturing simulation case study.
+
+      - layout: top-middle
+        title: Research on the Calculation Method of Dynamic Effective Stress Coefficient Based on P-Wave Velocity
+        link: doi.org/10.3390/pr14010127
+        link_text: View publication
+        description: | # this will include new lines to allow paragraphs
+          Journal article (co-author) — Published in *Processes*, 14(1), 127, MDPI, 2024. Contributed data analysis and methodology development.
 
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: The Boring Company
-        link: boringcompany.com
-        # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
-        quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        title: Silent Ocean Limited Forwarding and Clearing
+        sub_title: Logistics and Export Coordinator
+        caption: February 2021 - March 2023
         description: | # this will include new lines to allow paragraphs
-            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+          Managed end-to-end export processes including product purchasing, packaging, and delivery. Coordinated with international agencies to ensure timely and compliant shipments, optimizing logistics operations for a 15% reduction in delivery times. Maintained detailed documentation for customs clearance and regulatory compliance.
+
+      - layout: left
+        title: Market Research Analyst
+        caption: February 2021 - October 2022
+        description: | # this will include new lines to allow paragraphs
+          Conducted comprehensive market analysis to identify optimal sourcing opportunities. Negotiated with 50+ suppliers across multiple product categories, securing contracts with average cost savings of 12%. Developed market trend reports informing business strategy decisions.
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
-        quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        title: China University of Petroleum (Beijing)
+        caption: September 2024 - July 2027 (Expected)
+        sub_title: M.Sc. in Petroleum Engineering, Unconventional Petroleum Research Institute
         description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+          Focus: Hydraulic fracturing optimization, reservoir simulation, machine learning applications.
 
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+      - layout: left
+        title: Changzhou University
+        caption: October 2020 - July 2024
+        sub_title: B.Sc. in Petroleum Engineering
+        description: | # this will include new lines to allow paragraphs
+          Thesis: "The Sensitivity Analysis of Leakage Behavior on Multistage Fracturing with Horizontal Well" — utilized the HALLIBURTON GOHFER 3D fracturing simulator, presenting findings on optimal fracturing parameters for minimal leakage.
+
+          Research Project: "Hydrogen Gas Storage in Geological Structures and Transportation in Natural Gas Pipelines" — proposed a method for hydrogen gas storage in depleted reservoirs and analyzed its technical feasibility and economic viability.
+
+      - layout: left
+        title: Tsinghua University
+        caption: January 2021 - March 2021
+        sub_title: Visiting Exchange Student — Innovation & Entrepreneurship Program
+        description: | # this will include new lines to allow paragraphs
+          Blockchain Voting System project.
+
+      - layout: left
+        title: Chongqing University of Posts and Telecommunications
+        caption: October 2023 - November 2023
+        sub_title: Advanced Workshop on Cross-border E-commerce and Postal Express Industry Cooperation
 
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
-      - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+      **Technical Skills:** PETREL, HALLIBURTON GOHFER 3D, Python (machine learning), MATLAB, OriginLab, Power BI, MySQL
 
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+      **Languages:** English (professional), Mandarin (working proficiency), Swahili (native)
+
+      **Awards & Certifications:**
+      - Outstanding Student in Academic Performance in Jiangsu Province — Jiangsu Provincial Government (2023)
+      - Outstanding Student Performance Award, Petroleum Engineering Department — Changzhou University (2022)
+      - Member, Canadian Society of Exploration Geophysicists (CSEG)
+      - Certified Guizhou Silk Road Youth Exchange Programme, 2022 — Qiannan Normal University for Nationalities and Cultural Heritage
+      - Fundamentals of Digital Marketing, 2022 — Google Digital Garage Workshop
 
 # Footer
 footer_show_references: true
-# references_title: References on request (Override references text)
 
 # Build settings
 remote_theme: sproogen/resume-theme
