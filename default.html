@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.data.cv.name }}</title>
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  {% include header.html %}
+  <main class="wrap">
+    {{ content }}
+  </main>
+  <footer class="site-footer wrap">
+    <span>&copy; {{ 'now' | date: '%Y' }} {{ site.data.cv.name }}</span>
+    <span>Built with Jekyll · view <a href="https://github.com/Rutatina95" target="_blank" rel="noopener">source</a></span>
+  </footer>
+  <script src="{{ '/assets/js/reveal.js' | relative_url }}" defer></script>
+</body>
+</html>

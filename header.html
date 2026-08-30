@@ -1,0 +1,42 @@
+{%- assign cv = site.data.cv -%}
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <div>
+      <h1 class="site-header__name">{{ cv.name }}<span class="site-header__creds">{{ cv.credentials }}</span></h1>
+      {%- if cv.also_publishes_as %}
+      <p class="also-known">publishes as {{ cv.also_publishes_as }}</p>
+      {%- endif %}
+      <p class="site-header__headline">{{ cv.headline }}</p>
+      <ul class="contact-row">
+        {%- if cv.contact.email %}
+        <li>{% include icon.html name="email" %}<a href="mailto:{{ cv.contact.email }}">{{ cv.contact.email }}</a></li>
+        {%- endif %}
+        {%- if cv.contact.linkedin %}
+        <li>{% include icon.html name="linkedin" %}<a href="{{ cv.contact.linkedin.url }}" target="_blank" rel="noopener">{{ cv.contact.linkedin.label }}</a></li>
+        {%- endif %}
+        {%- if cv.contact.github %}
+        <li>{% include icon.html name="github" %}<a href="{{ cv.contact.github.url }}" target="_blank" rel="noopener">{{ cv.contact.github.label }}</a></li>
+        {%- endif %}
+        {%- if cv.contact.website %}
+        <li>{% include icon.html name="globe" %}<a href="{{ cv.contact.website.url }}" target="_blank" rel="noopener">{{ cv.contact.website.label }}</a></li>
+        {%- endif %}
+      </ul>
+    </div>
+    <div>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="{{ '/' | relative_url }}#employment">Employment</a>
+        <a href="{{ '/' | relative_url }}#education">Education</a>
+        <a href="{{ '/publications/' | relative_url }}">Publications</a>
+        <a href="{{ '/' | relative_url }}#skills">Skills</a>
+        <a href="{{ '/' | relative_url }}#referees">Referees</a>
+      </nav>
+      {%- if cv.cv_download %}
+      <p style="margin-top:1rem;">
+        <a class="cv-download" href="{{ cv.cv_download | relative_url }}" download>
+          {% include icon.html name="download" %} Download CV (PDF)
+        </a>
+      </p>
+      {%- endif %}
+    </div>
+  </div>
+</header>

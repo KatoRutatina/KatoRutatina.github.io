@@ -1,0 +1,230 @@
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation: none !important; transition: none !important; }
+}
+
+body {
+  margin: 0;
+  background: $paper;
+  color: $ink;
+  font-family: $font-body;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+a {
+  color: $rust;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+
+  &:hover { color: darken($rust, 8%); }
+  &:focus-visible {
+    outline: 2px solid $shale;
+    outline-offset: 2px;
+  }
+}
+
+// ---- Header -----------------------------------------------------
+.site-header {
+  background: $basalt;
+  color: $paper;
+  padding: 3rem 0 2.25rem;
+  border-bottom: 6px solid $rust;
+  position: relative;
+  overflow: hidden;
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.site-header__name {
+  font-family: $font-display;
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+  font-weight: 600;
+  margin: 0 0 0.15rem;
+}
+
+.site-header__creds {
+  font-family: $font-mono;
+  font-size: 0.85rem;
+  color: $sandstone;
+  margin-left: 0.5rem;
+}
+
+.site-header__headline {
+  font-size: 0.98rem;
+  color: rgba($paper, 0.75);
+  margin: 0.35rem 0 1.1rem;
+  max-width: 40em;
+}
+
+.also-known {
+  font-family: $font-mono;
+  font-size: 0.78rem;
+  color: rgba($paper, 0.55);
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem 1.4rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-row li { display: flex; align-items: center; gap: 0.45rem; }
+.contact-row a { color: $paper; font-family: $font-mono; font-size: 0.85rem; }
+.contact-row a:hover { color: $sandstone; }
+.contact-row svg { width: 15px; height: 15px; fill: $sandstone; flex-shrink: 0; }
+
+.site-nav {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.site-nav a {
+  font-family: $font-mono;
+  font-size: 0.82rem;
+  color: rgba($paper, 0.85);
+  border-bottom: 1px solid transparent;
+}
+.site-nav a:hover, .site-nav a.is-active {
+  color: $sandstone;
+  border-bottom-color: $sandstone;
+}
+
+.cv-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: $rust;
+  color: $paper;
+  font-family: $font-mono;
+  font-size: 0.82rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: $radius;
+  white-space: nowrap;
+}
+.cv-download:hover { background: darken($rust, 6%); color: $paper; }
+.cv-download svg { width: 14px; height: 14px; fill: currentColor; }
+
+// ---- Sections -----------------------------------------------------
+main { padding: 2.75rem 0 4rem; }
+
+.rubric {
+  scroll-margin-top: 1.5rem;
+}
+
+.rubric__heading {
+  font-family: $font-display;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid $border;
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+.rubric__heading .tag {
+  font-family: $font-mono;
+  font-size: 0.7rem;
+  color: $ink-soft;
+  font-weight: 400;
+}
+
+// ---- Publications list (non-log, since it's a citation list not a timeline) --
+.pub-list { list-style: none; margin: 0; padding: 0; }
+.pub-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid $border;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 1rem;
+}
+.pub-item:first-child { padding-top: 0; }
+.pub-item__year {
+  font-family: $font-mono;
+  font-size: 0.85rem;
+  color: $shale;
+  padding-top: 0.15rem;
+}
+.pub-item__title { font-weight: 600; margin: 0 0 0.2rem; }
+.pub-item__meta {
+  font-family: $font-mono;
+  font-size: 0.78rem;
+  color: $ink-soft;
+}
+.status-pill {
+  display: inline-block;
+  font-family: $font-mono;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  margin-left: 0.5rem;
+}
+.status-pill--revision { color: $rust; }
+.status-pill--published { color: $shale; }
+.pub-item__link { font-family: $font-mono; font-size: 0.8rem; }
+.pub-item__note { font-size: 0.85rem; color: $ink-soft; margin-top: 0.3rem; }
+
+// ---- Skills / misc grid --------------------------------------------
+.tag-groups { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.tag-group__label {
+  font-family: $font-mono;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $shale;
+  margin: 0 0 0.6rem;
+}
+.tag-group ul { list-style: none; margin: 0; padding: 0; }
+.tag-group li {
+  padding: 0.3rem 0;
+  border-bottom: 1px dashed $border;
+  font-size: 0.92rem;
+}
+
+// ---- Referees -------------------------------------------------------
+.referee { margin-bottom: 1.25rem; }
+.referee__name { font-weight: 600; }
+.referee__role { color: $ink-soft; font-size: 0.9rem; }
+
+// ---- Footer -----------------------------------------------------
+.site-footer {
+  border-top: 1px solid $border;
+  padding: 1.75rem 0;
+  font-family: $font-mono;
+  font-size: 0.75rem;
+  color: $ink-soft;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+// ---- Reveal-on-scroll (subtle, one-time) -----------------------------
+.rubric {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.rubric.is-visible { opacity: 1; transform: none; }

@@ -1,0 +1,89 @@
+// ---- Well-log track -------------------------------------------------
+// Each rubric (section) renders as a vertical "log" down the left margin:
+// a depth tick (the entry's start year) plus a lithology-coloured,
+// hatched core band whose height stands for the entry's duration.
+// This is the page's signature element — a timeline that reads like
+// the depth track on an actual wireline log.
+
+.log-section {
+  margin-bottom: 2.75rem;
+}
+
+.log-entry {
+  position: relative;
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  column-gap: 1.25rem;
+  padding-bottom: 2.5rem;
+
+  &:last-child { padding-bottom: 0; }
+}
+
+.log-entry__track {
+  position: relative;
+}
+
+.log-entry__depth {
+  font-family: $font-mono;
+  font-size: 0.7rem;
+  letter-spacing: 0.02em;
+  color: $ink-soft;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  padding-top: 0.15rem;
+}
+
+.log-entry__core {
+  position: absolute;
+  top: 1.35rem;
+  right: -1px;
+  width: 6px;
+  height: calc(100% - 1.6rem);
+  min-height: 1.2rem;
+  border-radius: 2px;
+
+  // Hatched "lithology" texture via repeating gradient, tinted per section
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(255,255,255,0.35) 0,
+    rgba(255,255,255,0.35) 2px,
+    transparent 2px,
+    transparent 5px
+  );
+}
+
+.log-section--education  .log-entry__core { background-color: $sandstone; }
+.log-section--employment .log-entry__core { background-color: $rust; }
+.log-section--publications .log-entry__core { background-color: $shale; }
+.log-section--misc .log-entry__core { background-color: $limestone; }
+
+.log-entry__body {
+  padding-top: 0;
+}
+
+.log-entry__title {
+  font-family: $font-display;
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin: 0 0 0.15rem;
+}
+
+.log-entry__org {
+  font-family: $font-mono;
+  font-size: 0.8rem;
+  color: $ink-soft;
+  margin: 0 0 0.6rem;
+
+  .sep { margin: 0 0.4em; opacity: 0.5; }
+}
+
+.log-entry__details {
+  margin: 0;
+  padding-left: 1.1rem;
+  li { margin-bottom: 0.3rem; }
+}
+
+@media (max-width: 620px) {
+  .log-section { grid-template-columns: 40px 1fr; column-gap: 0.85rem; }
+  .log-entry__depth { font-size: 0.6rem; }
+}

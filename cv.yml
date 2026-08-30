@@ -1,0 +1,95 @@
+name: "Kato Rutatina Pascraties"
+also_publishes_as: "R.P. Kato"
+credentials: "PhD Candidate"
+headline: "Petroleum & Energy Engineering — Geomechanics · EOR · Reservoir Simulation"
+
+photo: /assets/img/photo.jpg   # drop your photo here, or delete this line to hide it
+
+contact:
+  email: cm786532@gmail.com
+  university_email: 2024290049@student.cup.edu.cn
+  phone: "+86 132-2413-1862"
+  linkedin:
+    label: "kato-rutatina-pascraties"
+    url: "https://www.linkedin.com/in/kato-rutatina-pascraties"
+  github:
+    label: "Rutatina95"
+    url: "https://github.com/Rutatina95"
+  website:
+    label: "your site"
+    url: "https://rutatina95.github.io"   # CHANGE ME
+
+cv_download: /assets/files/cv.pdf   # replace this file with your compiled PDF
+
+# Each entry needs: title, org, location, start, end ("Present" allowed), details (list of bullet strings)
+education:
+  - title: "PhD, Petroleum & Energy Engineering"
+    org: "China University of Petroleum (Beijing)"
+    location: "Beijing, China"
+    start: "2024"
+    end: "Present"
+    details:
+      - "Research supervised by Professor Xingru Wu."
+      - "Focus areas: reservoir geomechanics, enhanced oil recovery (EOR), and reservoir simulation."
+      # EDIT ME — add prior degrees (BSc/MSc), institutions, and dates below
+  - title: "[Your prior degree — e.g. BSc/MSc]"
+    org: "[Institution]"
+    location: "[City, Country]"
+    start: "[Year]"
+    end: "[Year]"
+    details:
+      - "[Thesis title / honors / relevant coursework]"
+
+employment:
+  # EDIT ME — add your positions in reverse-chronological order
+  - title: "[Job title]"
+    org: "[Organization]"
+    location: "[City, Country]"
+    start: "[Year]"
+    end: "[Year / Present]"
+    details:
+      - "[What you did / built / led]"
+      - "[A measurable outcome]"
+
+skills:
+  - category: "Technical"
+    items:
+      - "Reservoir simulation"
+      - "Geomechanics modelling"
+      - "Petrophysical log analysis"
+  - category: "Software & Tools"
+    items:
+      - "Software development"
+      - "Streamlit / Python data tools"
+      - "Next.js / web application development"
+  - category: "Languages"
+    items:
+      - "[Language — proficiency]"
+
+publications:
+  # status: "Published" | "In Revision" | "In Press" | "Submitted"
+  # link: leave blank/omit until there is a public, reachable URL (DOI, journal page, arXiv, etc.)
+  - authors: "Kato, R.P.; Neequaye, C.N.A.; Jia, W. (corresponding)"
+    year: "2026"
+    title: "Relative Permeability Modifier (RPM) Technology for Conformance Control"
+    venue: "Energy & Fuels"
+    manuscript_id: "ef-2026-013418.R1"
+    status: "In Revision"
+    link: ""
+    note: "Manuscript under revision; link will be added once the DOI is assigned."
+
+misc:
+  - category: "Professional Affiliations"
+    items:
+      - "[e.g. SPE Student Chapter — CUP Beijing]"
+  - category: "Additional Interests"
+    items:
+      - "Document production & technical writing for research teams"
+      - "Software development"
+
+referees:
+  - name: "Professor Xingru Wu"
+    role: "Research Supervisor"
+    org: "China University of Petroleum (Beijing)"
+    contact: "[email / contact on request]"
+  # EDIT ME — add a second referee if you'd like one listed

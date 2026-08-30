@@ -1,0 +1,22 @@
+// ---- Design tokens -----------------------------------------------
+// Palette drawn from a stratigraphic core sample / well-log readout.
+$paper:      #efe9dd;   // core-sample paper
+$paper-dark: #e4dcc9;
+$ink:        #221f1a;   // basalt ink
+$ink-soft:   #4b453b;
+
+$sandstone:  #c89b5c;   // education band
+$rust:       #a6512e;   // employment band
+$shale:      #55636a;   // publications band
+$limestone:  #b7a88f;   // misc / rules
+$basalt:     #322f2a;   // header bg
+
+$border:     rgba(34,31,26,0.16);
+
+// Type
+$font-display: "Zilla Slab", "Roboto Slab", Georgia, serif;
+$font-body:    "IBM Plex Sans", -apple-system, "Segoe UI", sans-serif;
+$font-mono:    "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+
+$radius: 3px;
+$max-width: 880px;

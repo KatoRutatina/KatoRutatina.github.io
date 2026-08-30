@@ -1,37 +1,36 @@
-# Site
-repository: catolotatina/catolotatina.github.io
-favicon: images/favicon.ico
+title: Kato Rutatina Pascraties — Curriculum Vitae
+tagline: "Petroleum & Energy Engineering — Geomechanics · EOR · Reservoir Simulation"
+description: >-
+  Curriculum vitae of Kato Rutatina Pascraties (R.P. Kato), petroleum and
+  energy engineering researcher at China University of Petroleum-Beijing.
+url: "https://rutatina95.github.io"   # CHANGE to your GitHub Pages / custom domain
+baseurl: ""                            # e.g. "/cv-site" if served from a subpath
 
-# Content configuration version
-version: 2
+author: Kato Rutatina Pascraties
+email: cm786532@gmail.com
 
-# Personal info
-name: Kato Rutatina Pascraties
-title: Petroleum Engineering Graduate Student — CSEG Member
-email: 2024290049@student.cup.edu.cn
-website: https://github.com/Rutatina95
-
-# Dark Mode (true/false/never) — "never" locks the site to light mode
-darkmode: never
-
-# Social links — as printed on the CV
-github_username:  Rutatina95
-linkedin_username: kato-rutatina-pascraties
-
-# NOTE: the "content:" / "about_content:" fields are intentionally removed.
-# The homepage is now a fully custom page (index.html, below) instead of
-# the theme's auto-generated single-column layout, so it controls all
-# text and images directly.
-
-# Footer
-footer_show_references: true
-
-# Build settings
-remote_theme: sproogen/resume-theme
-
-sass:
-  sass_dir: _sass
-  style: compressed
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: /:title/
 
 plugins:
- - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"

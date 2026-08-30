@@ -1,0 +1,40 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+---
+{%- assign cv = site.data.cv -%}
+
+<section class="rubric is-visible" id="publications">
+  <h2 class="rubric__heading">Publications <span class="tag">{{ cv.publications.size }} record{% if cv.publications.size != 1 %}s{% endif %}</span></h2>
+
+  <ul class="pub-list">
+    {%- for pub in cv.publications %}
+    <li class="pub-item">
+      <span class="pub-item__year">{{ pub.year }}</span>
+      <div>
+        <p class="pub-item__title">
+          {{ pub.title }}
+          {%- if pub.status == "In Revision" %}
+          <span class="status-pill status-pill--revision">In Revision</span>
+          {%- elsif pub.status %}
+          <span class="status-pill status-pill--published">{{ pub.status }}</span>
+          {%- endif %}
+        </p>
+        <p class="pub-item__meta">
+          {{ pub.authors }}<span class="sep">·</span><em>{{ pub.venue }}</em>
+          {%- if pub.manuscript_id %}<span class="sep">·</span>MS {{ pub.manuscript_id }}{% endif %}
+        </p>
+        {%- if pub.link and pub.link != "" %}
+        <p class="pub-item__link">
+          {% include icon.html name="link" %}
+          <a href="{{ pub.link }}" target="_blank" rel="noopener">View publication ↗</a>
+        </p>
+        {%- elsif pub.note %}
+        <p class="pub-item__note">{{ pub.note }}</p>
+        {%- endif %}
+      </div>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>

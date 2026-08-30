@@ -1,27 +1,56 @@
-# Minimal Mistakes remote theme starter
+# CV Site
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+A Jekyll rebuild of a LaTeX academic CV template (`curve` class), themed as a
+**wireline well-log** — each Employment/Education entry gets a depth tick and
+a lithology-coloured core band, since the content is genuinely chronological.
 
-Contains basic configuration to get you a site with:
+## Edit your content
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+Everything lives in one file: **`_data/cv.yml`**. No HTML editing needed to
+update your name, contact info, employment, education, skills, or referees.
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+Publications live in the same file under `publications:`. Each entry:
+- Leave `link: ""` until you have a real, public URL (DOI / journal page).
+  The page will show an "In Revision" pill instead of a dead link.
+- Once published, set `link:` to the DOI/journal URL and `status: "Published"`.
 
----
+## Run locally
 
-## Troubleshooting
+```bash
+bundle install
+bundle exec jekyll serve
+```
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+Visit `http://localhost:4000`.
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+## Replace placeholders before publishing
+
+- `assets/files/cv.pdf` — currently a placeholder; swap in your real compiled CV.
+- `assets/img/photo.jpg` — optional; add a photo here and wire it into
+  `_includes/header.html` if you want one (the LaTeX template's `\photo` was
+  optional too — `fullonly`).
+- `_config.yml` — set `url` to your actual GitHub Pages / custom domain.
+- `_data/cv.yml` — fill in every `[bracketed placeholder]`.
+
+## Deploy to GitHub Pages
+
+1. Push this repo to GitHub (e.g. `Rutatina95/cv-site`).
+2. Repo Settings → Pages → Build and deployment → Source: **Deploy from a
+   branch**, branch `main`, folder `/ (root)`.
+3. Set `url` in `_config.yml` to `https://<username>.github.io` and `baseurl`
+   to `/<repo-name>` if it's not a `<username>.github.io` repo.
+
+## Structure
+
+```
+_config.yml         site settings
+_data/cv.yml         <- all editable content
+_includes/           header, icon library (inline SVG, no external font), log-section renderer
+_layouts/default.html
+_sass/               design tokens, layout, well-log component styles
+assets/css/main.scss main stylesheet entry point
+assets/js/reveal.js  subtle scroll-reveal (respects prefers-reduced-motion)
+assets/files/cv.pdf  downloadable CV (placeholder — replace me)
+index.html           Employment / Education / Skills / Additional / Referees
+publications/index.html
+```

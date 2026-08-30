@@ -1,0 +1,28 @@
+{%- comment -%}
+  Usage: {% include log-section.html entries=site.data.cv.education kind="education" %}
+  kind controls the lithology colour of the core band: education | employment | misc
+  Each entry row is its own two-column grid: [depth tick + core band] | [content].
+{%- endcomment -%}
+<div class="log-section log-section--{{ include.kind }}">
+  {%- for entry in include.entries %}
+  <article class="log-entry">
+    <div class="log-entry__track">
+      <span class="log-entry__depth">{{ entry.start }}</span>
+      <span class="log-entry__core" aria-hidden="true"></span>
+    </div>
+    <div class="log-entry__body">
+      <h3 class="log-entry__title">{{ entry.title }}</h3>
+      <p class="log-entry__org">
+        {{ entry.org }}<span class="sep">·</span>{{ entry.location }}<span class="sep">·</span>{{ entry.start }}–{{ entry.end }}
+      </p>
+      {%- if entry.details and entry.details.size > 0 %}
+      <ul class="log-entry__details">
+        {%- for d in entry.details %}
+        <li>{{ d }}</li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
+    </div>
+  </article>
+  {%- endfor %}
+</div>
